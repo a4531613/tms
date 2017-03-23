@@ -1,0 +1,20 @@
+1.切单状态显示
+2.排除休息时间
+3.不良率改为显示不良分类
+4.生产订单改为生产指令(指令数量,达成,达成率)
+5.工单累计产出改为指令累计产出
+
+
+2017年3月17日 19:24:25
+运维:
+串号状态:barcode_creating-->barcode_in
+
+@SELECT * FROM BAS_MOBILE A WHERE A.MOBILE_CODE='C1060416340A191';
+
+@SELECT * FROM BAS_BARCODE WHERE ID =166728968 A;
+
+@UPDATE BAS_BARCODE a set a.CURRENT_STATUS = 'barcode_in' where a.id=166728968;
+
+A10001899
+A10002006
+A10002098
