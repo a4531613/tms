@@ -1,1 +1,9 @@
 
+
+insert into FW_ROLE_MENU (ROLE_ID, MENU_ID, ID, UPDATED_BY, UPDATION_DATE)
+values (1, (SELECT MM.ID FROM FW_MENU MM, FW_MENU_TITLE T WHERE MM.ID = T.MENU_ID AND T.LANGUAGE_ID = 1
+             AND T.TITLE = '运输指令查询'), FW_ROLE_MENU_S.NEXTVAL, null, null);
+             
+             insert into FW_ROLE_MENU (ROLE_ID, MENU_ID, ID, UPDATED_BY, UPDATION_DATE)
+values (1, (SELECT MM.ID FROM FW_MENU MM, FW_MENU_TITLE T WHERE MM.ID = T.MENU_ID AND T.LANGUAGE_ID = 1
+             AND T.TITLE = '运输费用测算'), FW_ROLE_MENU_S.NEXTVAL, null, null);
